@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Ejercicio 2 de maquetación</title>
+  <style>
+    .tabla{
+      font-weight: bold;
+      border: 1px black solid;
+      border-collapse: collapse;
+      display: table;
+      margin: 5em auto;
+      background: #dccf79;
+    }
+    .fila{
+      display: table-row;
+    }
+    .fila .colH{
+      border: 1px black solid;
+      border-collapse: collapse;
+    }
+    .colH, .colH>p{
+      width: 100%;
+      height: 100%;
+      padding: 6px 2px;
+      background: darkcyan;
+      color: white;
+    }
+
+    .fila1{
+      display: table-row;
+      background: #98c9c6;
+    }
+    .col{
+      height: 10px;
+      border: 1px black solid;
+      display: table-cell;
+      padding: 10px;
+    }
+
+    .cola{
+      height: 30px;
+      display: table-cell;
+      padding: 10px;
+    }
+
+    .recreo{
+      display: flex;
+      flex-direction: column;
+      position: grid;
+    }
+    .P-recreo{
+      letter-spacing: 50px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      margin: 6px 80px;
+    }
+    p{
+      background: none;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+<img src="img/burbújas.png" alt="imagen de unas burbujas">
+<h1>Ejercicio 2 de maquetación</h1>
+
+<div class="tabla">
+  <div class="fila1">
+    <div class="colH">
+      <p>Hora</p>
+    </div>
+    <div class="col">Lunes</div>
+    <div class="col">Martes</div>
+    <div class="col">Miércoles</div>
+    <div class="col">Jueves</div>
+    <div class="col">Viernes</div>
+  </div>
+  <div class="fila">
+    <div class="colH">
+      <p>8:00-9:00</p>
+    </div>
+    <div class="col">FyQ</div>
+    <div class="col">Historia</div>
+    <div class="col">Química</div>
+    <div class="col">Lengua</div>
+    <div class="col">Tic</div>
+  </div>
+  <div class="fila">
+    <div class="colH">
+      <p>9:00-10:00</p>
+    </div>
+    <div class="col">FyQ</div>
+    <div class="col">Historia</div>
+    <div class="col">Química</div>
+    <div class="col">Lengua</div>
+    <div class="col">Tic</div>
+  </div>
+  <div class="fila">
+    <div class="colH">
+      <p>10:00-11:00</p>
+    </div>
+    <div class="col">FyQ</div>
+    <div class="col">Historia</div>
+    <div class="col">Química</div>
+    <div class="col">Lengua</div>
+    <div class="col">Tic</div>
+  </div>
+  <div class="fila">
+    <div class="recreo">
+      <p class="colH">11:00-11:30</p>
+      <p class="P-recreo">Recreo</p>
+    </div>
+    <div class="cola"></div>
+
+  </div>
+  <div class="fila">
+    <div class="colH">
+      <p>11:30-12:30</p>
+    </div>
+    <div class="col">FyQ</div>
+    <div class="col">Historia</div>
+    <div class="col">Química</div>
+    <div class="col">Lengua</div>
+    <div class="col">Tic</div>
+  </div>
+  <div class="fila">
+    <div class="colH">
+      <p>12:30-13:30</p>
+    </div>
+    <div class="col">FyQ</div>
+    <div class="col">Historia</div>
+    <div class="col">Química</div>
+    <div class="col">Lengua</div>
+    <div class="col">Tic</div>
+  </div>
+  <div class="fila">
+    <div class="colH">
+      <p>13:30-14:30</p>
+    </div>
+    <div class="col">FyQ</div>
+    <div class="col">Historia</div>
+    <div class="col">Química</div>
+    <div class="col">Lengua</div>
+    <div class="col">Tic</div>
+  </div>
+
+
+
+</div>
+
+
+<button class="volver">
+  <a href="index.html">Volver</a>
+</button>
+</header>
+</body>
+</html>

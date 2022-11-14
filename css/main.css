@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Yu Gothic Medium";
+}
+body{
+  background: #b5d9d5;
+  background-size: cover;
+}
+
+img{
+  margin-bottom: -800px;
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  height: 600px;
+  opacity: 25%;
+}
+h1{
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  font-weight: bold;
+  letter-spacing: 5px;
+  border-bottom: 3px burlywood solid;
+  border-right: 3px burlywood solid;
+  text-shadow: 2px 3px plum;
+}
+
+.description{
+  position: relative;
+  z-index: 1000;
+  margin: 90px auto;
+  text-align: center;
+  width: 70%;
+}
+
+h2{
+  border-bottom: 2px peru dashed;
+  text-align: left;
+  color: darkorange;
+  box-shadow: 6px 8px bisque;
+  background: #98c9c6;
+  padding: 3px 20px;
+
+}
+p{
+  text-align: center;
+  box-shadow: 6px 8px bisque;
+  color: black;
+  background: white;
+  padding: 3px 20px;
+}
+nav{
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+}
+ol{
+  list-style: none;
+}
+li{
+  display: inline-block;
+  border-bottom: 2px orangered solid;
+  transition: .5s all;
+}
+li:hover{
+  border-bottom: 4px orangered solid;
+}
+a{
+  text-align: center;
+  color: orangered;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  transition: .5s all;
+}
+a:hover{
+  text-shadow: 3px 5px darkgray;
+  font-size: 34px;
+}
+.volver{
+  background: linear-gradient(to right, lightblue, beige);
+  position: relative;
+  z-index: 1000;
+  animation: 5s infinite boton;
+
+}
+.volver:hover{
+  animation: boton forwards;
+}
+@keyframes boton{
+  0%{
+    background: linear-gradient(to right, lightblue, beige);
+  }
+  50%{
+    background: linear-gradient(to right, lightblue 20%, beige);
+    transform: rotate(5deg);
+  }
+  75%{
+    background: linear-gradient(to right, lightblue 50%, beige);
+    transform: rotate(180deg);
+  }
+  100%{
+    background: linear-gradient(to right, lightblue 1000%, beige);
+    transform: rotate(360deg);
+  }
+}
+
+.volver >a{
+  margin: 0;
+}
+
